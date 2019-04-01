@@ -9,7 +9,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { RepositoriesComponent } from './repositories/repositories.component';
 import { HomeComponent } from './home/home.component';
 import { HighlightDirective } from './highlight.directive';
-import { FollowersPipe } from './followers.pipe'
+import { FollowersPipe } from './followers.pipe';
+import { RepoComponent } from './repo/repo.component'
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FollowersPipe } from './followers.pipe'
     RepositoriesComponent,
     HomeComponent,
     HighlightDirective,
-    FollowersPipe
+    FollowersPipe,
+    RepoComponent
   ],
   imports: [
     BrowserModule,

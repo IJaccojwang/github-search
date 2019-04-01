@@ -1,0 +1,39 @@
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<div class="container-fluid">
+  <div class="row" id="head">
+    <div class="col-md-12">
+      <h1>GITHUB SEARCH</h1>
+      <form class="form-inline my-2 my-lg-0" action="">
+      <input type="text" class="form-control" placeholder="Enter username" [(ngModel)]="username" name="username">
+      <input type="text" class="form-control" placeholder="Enter username" [(ngModel)]="reponame" name="reponame">
+      <button class="btn btn-dark my-2 my-sm-0" type="submit"(click)="search()">Search</button>
+    </form>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-md-4 detail">
+        <a routerLink='/home' routerLinkActive='active'>Home</a>
+      </div>
+      <div class="col-md-4 detail">
+        <a routerLink='/profile' routerLinkActive='active'>Profile Search</a>
+      </div>
+      <div class="col-md-4 detail">
+        <a routerLink='/singlerepositories' routerLinkActive='active'>Repo Search</a>
+      </div>
+  </div>
+  <div class="container">
+    <div class="card">
+        <div class="row" id="each">
+          <div class="col-md-5">
+            <h2>{{singlerep.name}}</h2>
+          </div>
+          <div class="col-md-7">
+            <p>Name: {{singlerep.name}}</p>
+            <p>Description: {{singlerep.description}}</p>
+            <p>Language(s): {{singlerep.language}}</p>
+            <button type="button" name="button" class="btn btn-dark"><a href="{{singlerep.url}}" target="_blank">View on GitHub</a></button>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
