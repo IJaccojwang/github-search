@@ -54,6 +54,8 @@ background-color: grey;
   border-right: 1px solid black;
 }
 #head{
-
   color: white
+}
+input{
+  margin-left: 10%;
 }
