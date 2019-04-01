@@ -5,8 +5,12 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class FollowersPipe implements PipeTransform {
 
-  transform(value: any, args?: any): any {
-    return null;
+  transform(value: number) {
+    if(value > 0){
+      return  value + " follower(s) already";
+    }
+    else{
+      return value + " No followers yet"
+    }
   }
-
 }
