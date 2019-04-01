@@ -107,7 +107,7 @@ export class GithubService {
             resolve()
         },
         error=>{
-          this.singlerep.name="band";
+          this.singlerep.name="Erroe";
           this.singlerep.description="Error";
           this.singlerep.language="Error";
           this.singlerep.url="Error";
