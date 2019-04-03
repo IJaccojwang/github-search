@@ -12,6 +12,7 @@ const routes:Routes=[
   {path:"profile",component:ProfileComponent},
   {path:"repositories",component:RepositoriesComponent},
   {path:"repo",component:RepoComponent},
+  {path:"",redirectTo:"/home", pathMatch:"full"},
 ]
 
 @NgModule({
